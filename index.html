@@ -1,318 +1,235 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Official project page for RICo, a gradient-free method for automatic instruction-tuning data selection, accepted at AAAI 2026.">
+  <meta name="keywords" content="RICo, instruction tuning, data selection, in-context learning, large language models, AAAI 2026">
 
+  <meta property="og:title" content="RICo: Refined In-Context Contribution for Automatic Instruction-Tuning Data Selection">
+  <meta property="og:description" content="Gradient-free, bias-reduced, and scalable instruction-tuning data selection with refined in-context contribution.">
+  <meta property="og:url" content="https://annayang2020.github.io/RICo_Data_Selection/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://annayang2020.github.io/RICo_Data_Selection/static/images/rico_overview.png">
 
-  <title>ICon: In-Context Contribution for Automatic Data Selection</title>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RICo: Refined In-Context Contribution">
+  <meta name="twitter:description" content="Automatic instruction-tuning data selection with refined in-context contribution.">
+  <meta name="twitter:image" content="https://annayang2020.github.io/RICo_Data_Selection/static/images/rico_overview.png">
+
+  <title>RICo: Refined In-Context Contribution for Automatic Instruction-Tuning Data Selection</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css?v=3">
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
 </head>
 <body>
+  <main>
+    <section class="hero publication-hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <p class="publication-venue">AAAI 2026</p>
+              <h1 class="title is-1 publication-title">
+                <span class="title-line">RICo: Refined In-Context Contribution for</span>
+                <span class="title-line">Automatic Instruction-Tuning Data Selection</span>
+              </h1>
 
+              <div class="is-size-5 publication-authors" aria-label="Authors">
+                <span class="author-block">Yixin Yang,</span>
+                <span class="author-block">Qingxiu Dong,</span>
+                <span class="author-block">Linli Yao,</span>
+                <span class="author-block">Fangwei Zhu,</span>
+                <span class="author-block">Weilin Luo,</span>
+                <span class="author-block">Bin Wang,</span>
+                <span class="author-block">Zhifang Sui</span>
+              </div>
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">ICon: In-Context Contribution for <br> Automatic Data Selection</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                Yixin Yang,</span>
-                <span class="author-block">
-                  Qingxiu Dong,</span>
-                  <span class="author-block">
-                    Linli Yao,</span>
-                  <span class="author-block">
-                    Fangwei Zhu,</span>
-                  <span class="author-block">
-                    Zhifang Sui
-                  </span>
-                  </div>
+              <div class="is-size-5 publication-affiliation">
+                <span class="author-block">Peking University</span>
+                <span class="contact-line">yangyx@stu.pku.edu.cn</span>
+              </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Peking Univercity<br>yangyx@stu.pku.edu.cn</span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2505.05327.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://ojs.aaai.org/index.php/AAAI/article/view/40732" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2505.05327" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/AnnaYang2020/RICo_Data_Selection_for_Instruction-Tuning" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
                     <span>Code</span>
                   </a>
                 </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2505.05327" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/Figure_3.png" alt="Figure 3" style="width: 100%;">
-      <h2 class="subtitle has-text-left" style="font-size: 1.1rem; line-height: 1.6; margin-top: 1.5rem; color: #333; font-weight: normal;">
-        Instruction tuning is critical for improving LLMs, and effective data selection enhances its performance while reducing computational cost. We present <b>I</b>n-<b>co</b>ntext Learning for <b>Co</b>ntribution Measurement (ICon), a gradient-free, bias-reduced method that leverages in-context learning to measure the contribution of individual samples. ICon enables efficient identification of high-contribution data, improving overall model performance with fewer samples.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Data selection for instruction tuning is essential for improving the performance of Large Language Models (LLMs) and reducing training cost. However, existing automated selection methods either depend on computationally expensive gradient-based measures or manually designed heuristics, which may fail to fully exploit the intrinsic attributes of data. In this paper, we propose In-context Learning for Contribution Measurement (ICon), a novel gradient-free method that takes advantage of the implicit fine-tuning nature of in-context learning (ICL) to measure sample contribution without gradient computation or manual indicators engineering. ICon offers a computationally efficient alternative to gradient-based methods and reduces human inductive bias inherent in heuristic-based approaches. ICon comprises three components and identifies high-contribution data by assessing performance shifts under implicit learning through ICL. Extensive experiments on three LLMs across 12 benchmarks and 5 pairwise evaluation sets demonstrate the effectiveness of ICon. Remarkably, on LLaMA3.1-8B, models trained on 15% of ICon-selected data outperform full datasets by 5.42% points and exceed the best performance of widely used selection methods by 2.06% points. We further analyze high-contribution samples selected by ICon, which show both diverse tasks and appropriate difficulty levels, rather than just the hardest ones.
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <figure class="paper-figure hero-figure">
+            <img src="static/images/rico_overview.png" alt="Overview of the RICo method, from refined contribution measurement to scalable selection">
+          </figure>
+          <p class="lead-copy">
+            Instruction tuning is critical for improving LLMs, and effective data selection enhances its performance while reducing computational cost. We propose <strong>R</strong>efined <strong>Co</strong>ntribution Measurement with <strong>I</strong>n-<strong>Co</strong>ntext Learning (RICo), a gradient-free, bias-reduced method that leverages in-context learning to measure the contribution of individual samples. RICo enables efficient identification of high-contribution data, improving overall model performance with fewer samples.
           </p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </section>
 
-<!-- Introduction -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Introduction</h2>
-      <div class="content has-text-justified" style="font-size: 1.1rem; line-height: 1.6; color: #333;">
-        <p>
-          Recent advances in LLMs have shown that instruction tuning effectively improves model performance, typically relying on large-scale datasets. However, studies suggest that carefully selecting high-quality subsets can achieve better results at lower computational cost. Existing automated data selection methods either depend on gradient-based measures, which are computationally expensive, or on manually designed heuristics, which often fail to capture true sample contribution and may introduce human inductive bias.
-        </p>
-        <p>
-          We propose <b>I</b>n-<b>Con</b>text Learning for <b>Con</b>tribution Measurement (ICon), a novel data selection method that estimates sample contribution without gradients or manual heuristics by leveraging the implicit fine-tuning property of in-context learning (ICL). <b>ICon consists of three components: an assessment set, a contribution score computed via ICL, and a lightweight selection model trained with LoRA to enable scalable, linear-complexity inference calls.</b> Compared to gradient-based methods, ICon greatly reduces computational overhead; compared to heuristic-based methods, it more effectively identifies high-contribution data for instruction tuning.
-        </p>
-        <p>
-          The main contributions of our paper are as follows:
-        </p>
-        <ol>
-          <li>We propose ICon, a novel data selection method inspired by ICL. By leveraging its implicit fine-tuning nature, ICon enables gradient-free and bias-reduced measurement of each sample's contribution to model performance.</li>
-          <li>Our approach avoids gradient updates and auxiliary models, reducing computational cost and design complexity. Once trained with LoRA, the ICon-guided selection paradigm enables data selection through linear-complexity inference calls, making it highly scalable.</li>
-          <li>We demonstrate the effectiveness of ICon through experiments on multiple models, 12 widely used benchmarks, and 5 pairwise test sets, showing consistent performance gains over baselines.</li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Introduction -->
-
-<!-- Results -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Results</h2>
-      <div class="columns" style="margin-bottom: 2rem;">
-        <div class="column is-6" style="overflow: visible;">
-          <div style="width: 140%; margin-left: 0%;">
-            <img src="static/images/Figure_6.png" alt="Figure 6" style="width: 100%;">
-          </div>
-        </div>
-        <div class="column is-6" style="overflow: visible;">
-          <div style="width: 100%; margin-left: 39%;">
-            <img src="static/images/Figure_7.png" alt="Figure 7" style="width: 55.57%;">
-          </div>
-        </div>
-      </div>
-      <div class="columns">
-        <div class="column is-7">
-          <div class="content has-text-justified" style="font-size: 1.1rem; line-height: 1.6; color: #333;">
-            <p>
-              We demonstrate the effectiveness of ICon across multiple models and evaluation settings. Experiments on LLaMA3.1-8B, Qwen2.5-3B, and LLaMA2-7B are conducted using 12 widely used benchmarks and 5 pairwise comparison test sets.
-            </p>
-            <p>
-              <b>Models trained on a small fraction of ICon-selected data outperform their full-data counterparts.</b> With only 15% of the data, LLaMA3.1-8B and Qwen2.5-3B improve by 5.42 and 1.24 percentage points in average benchmark scores, respectively; LLaMA2-7B achieves a 0.65-point gain using just 5%. In pairwise comparison, we evaluate the strongest models from benchmark results: LLaMA3.1-8B, Qwen2.5-3B, and LLaMA2-7B, trained on 7,800, 7,800, and 520 ICon-selected samples, respectively. All three consistently outperform their full-data counterparts across all five test sets.
-            </p>
-            <p>
-              <b>ICon also surpasses widely used selection methods.</b> For example, it improves LLaMA3.1-8B's average benchmark score by 2.06 points over the best baseline. In pairwise comparison, ICon shows consistent and clear advantages over the widely used selection methods across all test sets and in overall performance.
-            </p>
-          </div>
-        </div>
-        <div class="column is-5">
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item">
-              <img src="static/images/Figure_8.png" alt="Figure 8" style="width: 85%; margin-left: 7%;"/>
-            </div>
-            <div class="item">
-              <img src="static/images/Figure_9-3.png" alt="Figure 9-3" style="width: 85%; margin-left: 7%;"/>
+    <section class="section section-tinted" id="abstract">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3 section-title has-text-centered">Abstract</h2>
+            <div class="content has-text-justified prose">
+              <p>
+                Data selection for instruction tuning is crucial for improving the performance of large language models (LLMs) while reducing training costs. In this paper, we propose Refined Contribution Measurement with In-Context Learning (RICo), a novel gradient-free method that quantifies the fine-grained contribution of individual samples to both task-level and global-level model performance. RICo enables more accurate identification of high-contribution data, leading to better instruction tuning. We also introduce a lightweight selection paradigm trained on RICo scores, enabling scalable data selection with strictly linear inference complexity. Extensive experiments on 3 LLMs across 12 benchmarks and 5 pairwise evaluation sets demonstrate the effectiveness of RICo. Remarkably, on LLaMA3.1-8B, models trained on 15% of RICo-selected data outperform full datasets by 5.42 percentage points and exceed the best performance of widely used selection methods by 1.48 percentage points. We further analyze high-contribution samples selected by RICo, which show both diverse tasks and appropriate difficulty levels, rather than just the hardest ones.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End Results -->
+    </section>
 
-<!-- Analysis -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Analysis</h2>
-      <div id="analysis-carousel" class="carousel results-carousel">
-        <div class="item">
-          <img src="static/images/Figure_10.png" alt="Figure 10" style="width: 35%; margin-left: 32.5%;"/>
-        </div>
-        <div class="item">
-          <img src="static/images/Figure_11.png" alt="Figure 11" style="width: 35%; margin-left: 32.5%;"/>
-        </div>
-        <div class="item">
-          <img src="static/images/Figure_12.png" alt="Figure 12" style="width: 35%; margin-left: 32.5%;"/>
-        </div>
-        <div class="item">
-          <img src="static/images/Figure_13.png" alt="Figure 13" style="width: 35%; margin-left: 32.5%;"/>
+    <section class="section" id="introduction">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 section-title">Introduction</h2>
+        <div class="content has-text-justified prose">
+          <p>
+            Recent advances in LLMs have shown that instruction tuning effectively improves model performance, typically relying on large-scale datasets. However, studies suggest that carefully selecting high-quality subsets can achieve better results at lower computational cost. Previous automated data selection methods often use gradient-based sample valuation, but are computationally expensive. Other lightweight methods rely on manually designed heuristics (e.g., textual features and instruction difficulty), but they do not directly measure training impact and may introduce bias. Recent ICL-based binary comparisons leverage ICL's implicit fine-tuning, but still yield coarse signals, favor longer samples, and require many inference calls.
+          </p>
+          <h3 class="title is-5 work-title">Our Work</h3>
+          <ol class="contribution-list">
+            <li>We propose RICo, a novel gradient-free data selection method that quantifies the refined contribution of individual samples to overall model performance, with fairness adjustments to reduce length-related bias.</li>
+            <li>We introduce a lightweight selection paradigm trained on RICo contribution scores, enabling scalable data selection with strictly linear inference complexity.</li>
+            <li>We demonstrate the effectiveness of RICo through experiments on multiple models, 12 widely used benchmarks, and 5 pairwise test sets, showing consistent performance gains over baselines.</li>
+          </ol>
         </div>
       </div>
-      <div class="content has-text-justified" style="font-size: 1.1rem; line-height: 1.6; color: #333; margin-top: 2rem;">
-        <p>
-          <b>Optimal Data Scale:</b> We examine how data scale affects instruction tuning performance using LLaMA3.1-8B. The results exhibit a general trend of rising and then falling performance, with the average benchmark score peaking at 15% of ICon-selected data—outperforming models trained on larger subsets.
-        </p>
-        <p>
-          <b>Generalization on different Datasets:</b> To evaluate generalization, we apply the Alpaca-trained selection paradigm to the WizardLM dataset. The model trained on just 5% of WizardLM achieves the best performance, with a 4.54-point gain over the full dataset, confirming ICon's effectiveness across datasets without retraining the selection model.
-        </p>
-        <p>
-          <b>Characteristics of Selected Samples:</b> t-SNE analysis reveals that high-contribution samples are both diverse and locally clustered. These samples are generally more difficult than the full dataset, but not skewed toward the highest difficulty, suggesting that ICon favors appropriately challenging data while avoiding extremes.
-        </p>
+    </section>
+
+    <section class="section section-tinted" id="results">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 section-title">Results</h2>
+        <div class="figure-grid results-grid">
+          <figure class="paper-figure figure-wide">
+            <img src="static/images/results_benchmarks.png" alt="Benchmark and FLOPs results for RICo-selected subsets across three language models" loading="lazy">
+          </figure>
+          <figure class="paper-figure figure-tall">
+            <img src="static/images/results_full_data_pairwise.png" alt="Pairwise comparison between RICo-selected subsets and the full Alpaca dataset" loading="lazy">
+          </figure>
+          <figure class="paper-figure">
+            <img src="static/images/results_baselines_benchmarks.png" alt="Benchmark comparison between RICo and baseline data-selection methods" loading="lazy">
+          </figure>
+          <figure class="paper-figure figure-wide">
+            <img src="static/images/results_baselines_pairwise.png" alt="Pairwise winning scores comparing RICo with baseline methods" loading="lazy">
+          </figure>
+        </div>
+
+        <div class="content has-text-justified prose section-copy">
+          <p>
+            We demonstrate the effectiveness of RICo across multiple models and evaluation settings. Experiments on LLaMA3.1-8B, Qwen2.5-3B, and LLaMA2-7B are conducted using 12 widely used benchmarks and 5 pairwise comparison test sets.
+          </p>
+          <p>
+            <strong>Models trained on a small fraction of RICo-selected data outperform their full-data counterparts.</strong> With only 15% of the data, LLaMA3.1-8B and Qwen2.5-3B improve by 5.42 and 1.24 percentage points in average benchmark scores, respectively; LLaMA2-7B achieves a 0.65-point gain using just 1%. In pairwise comparison, we evaluate the strongest models from benchmark results: LLaMA3.1-8B, Qwen2.5-3B, and LLaMA2-7B, trained on 7,800, 7,800, and 520 RICo-selected samples, respectively. All three consistently outperform their full-data counterparts across all five test sets.
+          </p>
+          <p>
+            <strong>RICo also surpasses widely used selection methods.</strong> For example, it improves LLaMA3.1-8B's average benchmark score by 1.48 points over the best baseline. In pairwise comparison, RICo shows consistent and clear advantages over widely used selection methods across all test sets and in overall performance.
+          </p>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End Analysis -->
+    </section>
 
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Conclusion</h2>
+    <section class="section" id="analysis">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 section-title">Analysis</h2>
+        <div class="figure-grid analysis-grid">
+          <figure class="paper-figure">
+            <img src="static/images/analysis_data_scale.png" alt="Evaluation benchmark score across different proportions of RICo-selected Alpaca data" loading="lazy">
+          </figure>
+          <figure class="paper-figure">
+            <img src="static/images/analysis_wizardlm.png" alt="Generalization results on RICo-selected WizardLM subsets" loading="lazy">
+          </figure>
+          <figure class="paper-figure">
+            <img src="static/images/analysis_tsne.png" alt="t-SNE visualization of high-contribution RICo samples" loading="lazy">
+          </figure>
+          <figure class="paper-figure">
+            <img src="static/images/analysis_difficulty.png" alt="Difficulty distribution of RICo-selected samples and the full Alpaca dataset" loading="lazy">
+          </figure>
+        </div>
 
-      <div class="content has-text-justified" style="font-size: 1.1rem; line-height: 1.6; color: #333; margin-top: 2rem;">
-        In this work, we introduced ICon, a novel method that uses ICL to efficiently assess the contribution of individual training samples without human inductive bias. The method is structured into three stages: constructing an assessment set, computing ICon scores, and training a lightweight selection paradigm for scalable data selection. Extensive experiments on three LLMs across 12 benchmarks and 5 pairwise evaluation sets show that models trained on ICon-selected data outperform those trained on the full dataset, achieving superior performance with fewer samples. ICon also significantly outperforms other widely used data selection methods. We further analyzed the optimal data scale, generalization across datasets, and characteristics of high-contribution samples. As data scale increases, performance improves initially but later declines, indicating an optimal data size. ICon generalizes well across datasets, and its high-contribution samples display diversity while maintaining an appropriate level of difficulty for effective learning.
+        <div class="content has-text-justified prose section-copy">
+          <p>
+            <strong>Optimal Data Scale:</strong> We examine how data scale affects instruction-tuning performance using LLaMA3.1-8B. Performance generally rises and then falls, with the average benchmark score peaking at 15% of RICo-selected data and outperforming models trained on larger subsets.
+          </p>
+          <p>
+            <strong>Generalization across Datasets:</strong> We apply the Alpaca-trained selection paradigm to WizardLM. The model trained on just 5% of WizardLM achieves the best performance, confirming RICo's effectiveness across datasets without retraining the selection model.
+          </p>
+          <p>
+            <strong>Characteristics of Selected Samples:</strong> t-SNE analysis shows that high-contribution samples are diverse and locally clustered. These samples are generally more difficult than the full dataset, but are not skewed toward the hardest examples, suggesting that RICo favors appropriately challenging data while avoiding extremes.
+          </p>
+        </div>
       </div>
-        
+    </section>
+
+    <section class="section section-tinted" id="conclusion">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 section-title">Conclusion</h2>
+        <div class="content has-text-justified prose">
+          <p>
+            We propose RICo, a gradient-free data selection method that quantifies individual sample contributions for instruction tuning. By computing task- and global-level contributions, RICo identifies high-contribution data. We also introduce a lightweight paradigm for efficient data curation. Across 3 LLMs, 12 benchmarks, and 5 pairwise tests, RICo-selected data outperforms full-data and other methods, achieving better results with fewer samples. We further analyze optimal data scales, generalization, ablation, and sample characteristics.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
-<!--End paper poster -->
+    </section>
 
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title is-3 section-title">BibTeX</h2>
+        <pre class="bibtex"><code>@inproceedings{yang2026rico,
+  title={RICo: Refined In-Context Contribution for Automatic Instruction-Tuning Data Selection},
+  author={Yang, Yixin and Dong, Qingxiu and Yao, Linli and Zhu, Fangwei and Luo, Weilin and Wang, Bin and Sui, Zhifang},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={40},
+  pages={34349--34357},
+  year={2026}
+}</code></pre>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered footer-copy">
+            <p>
+              This page was built using the
+              <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener noreferrer">Academic Project Page Template</a>,
+              adopted from the <a href="https://nerfies.github.io" target="_blank" rel="noopener noreferrer">Nerfies</a> project page.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  </footer>
+</body>
+</html>
